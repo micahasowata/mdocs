@@ -1,11 +1,15 @@
 import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const Main = () => {
 	return (
 		<>
-			<h2>Layout</h2>
-			<Outlet />
-			<footer>Hey from Minasa Docs</footer>
+			<Navbar />
+			<div className="grid grid-cols-12 min-h-dvh">
+				<Outlet />
+			</div>
+			<Footer />
 		</>
 	);
 };
