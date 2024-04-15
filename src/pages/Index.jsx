@@ -1,5 +1,12 @@
+import Head from "../components/Head";
+
 const Index = () => {
-	return <h2>Index</h2>;
+	return (
+		<>
+			<Head title={"Welcome"} />
+			<h2>Index</h2>
+		</>
+	);
 };
 
 export default Index;
