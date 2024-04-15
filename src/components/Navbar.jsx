@@ -4,10 +4,12 @@ const Navbar = () => {
 	return (
 		<nav className="bg-black text-white">
 			<ul className="flex flex-row justify-between p-3">
-				<img
-					src={wordmarkWhite}
-					alt="Minasa Icon with the word Developers in white to its left"
-				/>
+				<NavLink to={"/"}>
+					<img
+						src={wordmarkWhite}
+						alt="Minasa Icon with the word Developers in white to its left"
+					/>
+				</NavLink>
 				<div>
 					<NavLink to={"/docs"} className="font-medium">
 						Docs
